@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		transition: all .5s ease-in-out;
+	}
+	p{
+		color: #f2f2f2;
+	}
+	.modes{
+		background-color: rgba(127, 127, 127, 0.2);
+		color: #fff !important;
+	}
+	.form-control:focus{
+		outline: none;
+		box-shadow: none;
+		border: none;
+		background-color: rgba(127, 127, 127, 0.43);
+	}
+	body{
+		background: url(assets/images/northern-lights-1081752_1920.jpg) no-repeat;
+		background-size: cover;
+		height: 100vh;
+		padding-top: 100px;
+	}
+	.round{
+		border-radius: 60px;
+		font-weight: normal;
+	}
+	hr{
+		background-color: rgba(127, 127, 127, 0.2);
+	}
+	/*toggle*/
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  width: 45px;
+	  height: 23px;
+	}
+
+	.switch input {display:none;}
+
+	.slider {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(127, 127, 127, 0.43);
+	  -webkit-transition: .2s;
+	  transition: .2s;
+	}
+
+	.slider:before {
+	  position: absolute;
+	  content: "";
+	  height: 15px;
+	  width: 15px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .2s;
+	  transition: .2s;
+	}
+
+	input:checked + .slider {
+	  background-color: rgba(23, 229, 19, 0.52);
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(20px);
+	  -ms-transform: translateX(20px);
+	  transform: translateX(20px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+	  border-radius: 34px;
+	}
+
+	.slider.round:before {
+	  border-radius: 50%;
+	}
+	/* end toggle */
+
+	.card{
+		box-shadow: none;
+		outline: none; 
+		background-color: 
+		transparent; 
+		width: 400px;
+	}
+	@media screen and (max-width: 480px){
+		.card{
+			width: 300px;
+		}
+	}
+	@media screen and (max-width: 300px){
+		.card{
+			width: 200px;
+		}
+	}
+</style>
+<body>
+		<div class="card border-0 mx-auto">
+          <div class="card-header text-center border-0" style="background-color: transparent;">
+            <h5 class="round px-3 py-2 m-0"><img src="assets/images/logo2.png" style="height: 40px"></h5>
+          </div>
+          <div class="card-body text-center">
+            <form>
+              <div class="form-group">
+                <input type="email" class="modes form-control border-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Id">
+              </div>
+              <div class="form-group m-0">
+                <input type="password" class="modes form-control  border-0 text-white" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="simple-text mt-3">
+              	<p class="pull-left">Remember me</p>
+              	<label class="switch pull-right">
+				  <input type="checkbox">
+				  <span class="slider round"></span>
+				</label>
+			  </div>
+            </form>
+             <button type="submit" class="round btn btn-sm px-4 main-color text-white on-hover">SIGN IN</button>
+             <hr>
+             <p style="font-size: 13px;">Or you can sign in via social network</p>
+             <button type="submit" class="btn btn-sm text-white" style="background: #5193EA;">
+              <i class="fa fa-facebook"></i> facebook</button>
+             <button type="submit" class="btn btn-sm text-white" style="background: #44CCFE">
+              <i class="fa fa-twitter"></i> Twitter</button>
+              <p style="font-size: 13px;" class="pt-3 b-0">Dont have account yet? <a href="">Create an account</a></p>
+          </div>
+        </div>
+</body>
+</html>

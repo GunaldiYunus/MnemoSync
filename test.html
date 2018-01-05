@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Optional</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="wrapper" class="toggled nav-collapse">
+        <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav nav flex-column">
+      <a class="navbar-brand text-center pt-3 pb-3" href="#" style="font-size: 22px;">LOGO</a>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+      </li>
+
+      <div id="exampleAccordion" data-children=".item">
+        <div class="item">
+          <li class="nav-item">
+            <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1" class="nav-link"><i class="fa fa-desktop" aria-hidden="true"></i> Ui Elements </a>
+          </li>
+          <div id="exampleAccordion1" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">General</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#ibutton">Buttons</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Panels</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
+          </li>
+          <div id="exampleAccordion2" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">To do list</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Calendar</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3" class="nav-link"><i class="fa fa-tasks" aria-hidden="true"></i> Forms</a>
+          </li>
+          <div id="exampleAccordion3" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Forms</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Form Components</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> E-commerce</a>
+          </li>
+          <div id="exampleAccordion6" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products Grid</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products List</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Credit card form</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i> Data Tables</a>
+          </li>
+          <div id="exampleAccordion4" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Tables</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Responsive Tables</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5" class="nav-link"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Charts</a>
+          </li>
+          <div id="exampleAccordion5" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Morris</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">ChartJs</a>
+            </li>
+          </div>
+        </div>
+      </div><!--acordion end-->
+    </ul>
+  </div>
+<!--sidebar-->
+<!--fwithis-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+      </li>
+
+      <div id="exampleAccordion" data-children=".item">
+        <div class="item">
+          <li class="nav-item">
+            <a data-toggle="collapse" data-parent="#exampleAccordion" href="#example1" aria-expanded="true" aria-controls="example1" class="nav-link"><i class="fa fa-desktop" aria-hidden="true"></i> Ui Elements </a>
+          </li>
+          <div id="example1" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">General</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Buttons</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Panels</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#example2" aria-expanded="false" aria-controls="example2" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
+          </li>
+          <div id="example2" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">To do list</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Calendar</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#examplew" aria-expanded="false" aria-controls="examplew" class="nav-link"><i class="fa fa-tasks" aria-hidden="true"></i> Forms</a>
+          </li>
+          <div id="examplew" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Forms</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Form Components</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#example6" aria-expanded="false" aria-controls="example6" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> E-commerce</a>
+          </li>
+          <div id="example6" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products Grid</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products List</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Credit card form</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordionz" aria-expanded="false" aria-controls="exampleAccordionz" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i> Data Tables</a>
+          </li>
+          <div id="exampleAccordionz" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Tables</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Responsive Tables</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#example5" aria-expanded="false" aria-controls="example5" class="nav-link"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Charts</a>
+          </li>
+          <div id="example5" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Morris</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">ChartJs</a>
+            </li>
+          </div>
+        </div>
+      </div><!--acordion end huhu-->
+</div>
+
+<!--navigation-->
+  <nav class="navbar navbar-expand-lg main-color py-3">
+    <div class="col-3 p-0">
+      <a href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars text-white" aria-hidden="true" style="font-size: 20px;"></i></a>
+      <i class="fav fa fa-bars text-white" aria-hidden="true" style="font-size: 20px;" onclick="openNav()"></i>
+    </div>
+    <div class="col-9 pull-right">
+      <ul class="float-right m-0 p-0">
+        <li class="deco-link px-3">
+          <a href="#" data-toggle="modal" data-target="#search"><i class="fa fa-search"></i></a>
+        </li>
+        
+        <li class="deco-link px-3 nav-item dropdown">
+          <a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope-o"></i>
+          </a>
+          <div class="dropdown-menu pull-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+          
+        <li class="deco-link px-3">
+          <a href="#"><i class="fa fa-sliders"></i></a>
+        </li>
+        <li class="deco-link pl-3">
+          <a href="#"><i class="fa fa-power-off"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--/navigation-->
+<!--body-->
+<div class="col-12 main-bg"><h5 class="head-title py-2 m-0" style="color: #989898 !important">Featured</h5></div>
+<div class="main-bg px-2">
+  <div class="container-fluid">
+    <div class="progressu py-3">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><p>>Basic Progress Bar</p></div>
+            <div class="card-body">
+              <div class="progress">
+                  <div class="progress-bar" style="width:10%"></div>
+                </div><br>
+
+                <!-- Green -->
+                <div class="progress">
+                  <div class="progress-bar bg-success" style="width:20%"></div>
+                </div><br>
+
+                <!-- Turquoise -->
+                <div class="progress">
+                  <div class="progress-bar bg-info" style="width:30%"></div>
+                </div><br>
+
+                <!-- Orange -->
+                <div class="progress">
+                   <div class="progress-bar bg-warning" style="width:40%"></div>
+                </div><br>
+
+                <!-- Red -->
+                <div class="progress">
+                  <div class="progress-bar bg-danger" style="width:50%"></div>
+                </div><br>
+
+              </div>
+            </div>
+          </div>
+         <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"><p>>Progress Bar Stripped</p></div>
+            <div class="card-body">
+              <div class="progress">
+                  <div class="progress-bar progress-bar-striped" style="width:10%"></div>
+                </div><br>
+
+                <!-- Green -->
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped" style="width:20%"></div>
+                </div><br>
+
+                <!-- Turquoise -->
+                <div class="progress">
+                  <div class="progress-bar bg-info progress-bar-striped" style="width:30%"></div>
+                </div><br>
+
+                <!-- Orange -->
+                <div class="progress">
+                   <div class="progress-bar bg-warning progress-bar-striped" style="width:40%"></div>
+                </div><br>
+
+                <!-- Red -->
+                <div class="progress">
+                  <div class="progress-bar bg-danger progress-bar-striped" style="width:50%"></div>
+                </div><br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--/row-->
+      <div class="alert-example py-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>alert examples</p></div>
+              <div class="card-body">
+                <div class="alert alert-success">
+                    <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                  </div>
+                  <div class="alert alert-info">
+                    <strong>Info!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                  </div>
+                  <div class="alert alert-warning">
+                    <strong>Warning!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                  </div>
+                  <div class="alert alert-danger">
+                    <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-header"><p>blaa alerts</p></div>
+                <div class="card-body">
+                  <div class="alert alert-dark alert-dismissable fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Dark!</strong> Dark grey alert.
+                  </div>
+                  <div class="alert alert-warning alert-dismissable fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Warning!</strong> This alert box could indicate
+                  </div>
+                  <div class="alert alert-danger alert-dismissable fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Danger!</strong>a dangerous or potentially negative action.
+                  </div>
+                  <div class="alert alert-primary alert-dismissable fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Primary!</strong> Indicates an important action.
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div><!--/row-->
+      </div>
+
+      <div class="badgesu py-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>pill badges</p></div>
+              <div class="card-body text-center">
+                <span class="badge badge-pill badge-primary">22</span>
+                <span class="badge badge-pill badge-secondary">33</span>
+                <span class="badge badge-pill badge-success">44</span>
+                <span class="badge badge-pill badge-danger">55</span>
+                <span class="badge badge-pill badge-warning">66</span>
+                <span class="badge badge-pill badge-info">77</span>
+                <span class="badge badge-pill badge-light">88</span>
+                <span class="badge badge-pill badge-dark">99</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>contexual badges</p></div>
+              <div class="card-body text-center">
+                <span class="badge badge-primary">Primary</span>
+                <span class="badge badge-secondary">Secondary</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-danger">Danger</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-light">Light</span>
+                <span class="badge badge-dark">Dark</span>
+              </div>
+            </div>
+          </div>
+        </div><!--/row-->
+      </div>
+
+      <div class="button py-3" id="ibutton">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>basic buttons</p></div>
+              <div class="card-body">
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>outline buttons</p></div>
+              <div class="card-body">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 py-4">
+            <div class="card">
+              <div class="card-header"><p>button sizes</p></div>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary btn-lg">Large</button>
+                <button type="button" class="btn btn-primary">Default</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+            <div class="card-header"><p>block buttons</p></div>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+                <button type="button" class="btn btn-default btn-sm btn-block">Button 2</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+            <div class="card-header"><p>Button groups</p></div>
+              <div class="card-body">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Apple</button>
+                  <button type="button" class="btn btn-primary">Samsung</button>
+                  <button type="button" class="btn btn-primary">Sony</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>nesting button groups& nesting menus</p></div>
+              <div class="card-body">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">Apple</button>
+                  <button type="button" class="btn btn-primary">Samsung</button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                       Sony
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Tablet</a>
+                      <a class="dropdown-item" href="#">Smartphone</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--/row-->
+      </div>
+      <div class="formu py-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"><p>basic form</p></div>
+              <div class="card-body">
+                <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div><!--/row-->
+      </div>
+
+    </div><!--/progressu-->
+  </div>
+</div>
+<!--/body-->
+<div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control rounded-0 w-75" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 rounded-0 w-25 border-left" type="submit">Go</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="assets/zabuto_calendar.js"></script>
+    <script src="assets/script.js"></script>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "75%";
+      }
+
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+  </body>
+</html>

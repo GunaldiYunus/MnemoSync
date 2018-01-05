@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin template</title>
+    <!-- Required meta tags -->
+    <!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hamburgers.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body style="position: relative;">
+<aside id="leftside">
+<ul class="sidebar-nav nav flex-column">
+      <a class="navbar-brand text-center pt-3 pb-3" href="#"><img src="assets/images/logo.png" style="height: 30px"></a>
+      <li class="parent-li nav-item">
+        <a class="nav-link" href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+      </li>
+
+      <div id="exampleAccordion" data-children=".item">
+        <div class="item">
+          <li class="parent-li nav-item">
+            <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" aria-expanded="true" aria-controls="exampleAccordion1" class="nav-link"><i class="fa fa-desktop" aria-hidden="true"></i> Ui Elements </a>
+          </li>
+          <div id="exampleAccordion1" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">General</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#ibutton">Buttons</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Panels</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="parent-li nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" aria-expanded="false" aria-controls="exampleAccordion2" class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i> Components</a>
+          </li>
+          <div id="exampleAccordion2" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">To do list</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Calendar</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="parent-li nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" aria-expanded="false" aria-controls="exampleAccordion3" class="nav-link"><i class="fa fa-tasks" aria-hidden="true"></i> Forms</a>
+          </li>
+          <div id="exampleAccordion3" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Forms</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Form Components</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="parent-li nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion6" aria-expanded="false" aria-controls="exampleAccordion6" class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i> E-commerce</a>
+          </li>
+          <div id="exampleAccordion6" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products Grid</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Products List</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Credit card form</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="parent-li nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion4" aria-expanded="false" aria-controls="exampleAccordion4" class="nav-link"><i class="fa fa-table" aria-hidden="true"></i> Data Tables</a>
+          </li>
+          <div id="exampleAccordion4" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Basic Tables</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Responsive Tables</a>
+            </li>
+          </div>
+        </div>
+        <div class="item">
+          <li class="parent-li nav-item">
+           <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion5" aria-expanded="false" aria-controls="exampleAccordion5" class="nav-link"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Charts</a>
+          </li>
+          <div id="exampleAccordion5" class="collapse" role="tabpanel">
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">Morris</a>
+            </li>
+            <li class="nav-item pl-4">
+              <a class="nav-link" href="#">ChartJs</a>
+            </li>
+          </div>
+        </div>
+      </div><!--acordion end-->
+    </ul>
+</aside>  
+
+
+<section class="content" id="content">
+<div class="nav-collapse">  
+<!--navigation-->
+  <nav class="navbar navbar-expand-lg sticky-top main-color py-3">
+    <div class="col-2 p-0">
+      <button onclick="showleft()" class="showlef but"  id="showleft" style="font-size: 20px;" >
+        <i class="showe fa fa-bars"></i> <i class="hidden fa fa-times"> </i></button>
+      <button onclick="hideleft()" class="hide but"  id="hide" style="font-size: 20px;">
+        <i class="showe fa fa-times"></i> <i class="hidden fa fa-bars"></i></button>
+    </div>
+    <div class="col-10 pull-right">
+      <ul class="float-right m-0 p-0">
+        <li class="deco-link px-3">
+          <a href="#" data-toggle="modal" data-target="#search"><i class="fa fa-search"></i></a>
+        </li>
+        
+        <li class="deco-link px-3 nav-item dropdown">
+          <a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope-o"></i>
+          <span class="badge badge-pill bg-logo mod-font">5</span>
+          </a>
+          <div class="dropdown-menu pull-right p-0 border-0" aria-labelledby="navbarDropdown">
+            <div class="notify-arrow notify-arrow-green"></div>
+            <p class="dropdown-item m-0 py-3 text-white bg-logo">You have 5 new messages</p>
+            <div class="dropdown-divider m-0"></div>
+
+            <div class="dropdown-item wrap d-inline-block py-3 px-1 w-100">
+              <img src="assets/images/ui-sherman.jpg" class="pull-left px-2" style="height: 40px">
+              <div class="chat">
+                <p class="mod-font2 m-0 pb-1">Zack Snippet <span class="pull-right italic">Just now</span></p>
+                <p class="mod-font m-0">Hi, Gun how is everything?</p>
+              </div>
+            </div>
+
+            <div class="dropdown-item wrap d-inline-block py-3 px-1 w-100">
+              <img src="assets/images/ui-divya.jpg" class="pull-left px-2" style="height: 40px">
+              <div class="chat">
+                <p class="mod-font2 m-0 pb-1">Divya manian <span class="pull-right italic">37 mins.</span></p>
+                <p class="mod-font m-0">Thats fun!, meet again</p>
+              </div>
+            </div>
+
+            <div class="dropdown-item wrap d-inline-block py-3 px-1 w-100">
+              <img src="assets/images/ui-danro.jpg" class="pull-left px-2" style="height: 40px">
+              <div class="chat">
+                <p class="mod-font2 m-0 pb-1">Danro Venzedi <span class="pull-right italic">2 hrs.</span></p>
+                <p class="mod-font m-0">Bad works, but i like at last</p>
+              </div>
+            </div>
+
+            <div class="dropdown-item wrap d-inline-block py-3 px-1 w-100">
+              <img src="assets/images/ui-zac.jpg" class="pull-left px-2" style="height: 40px">
+              <div class="chat">
+                <p class="mod-font2 m-0 pb-1">Xaco Vewi'shal <span class="pull-right italic">4 hrs.</span></p>
+                <p class="mod-font m-0">I need your help with this</p>
+              </div>
+            </div>
+            <a href="" class="dropdown-item m-0 py-3"> See all messages</a>
+          </div>
+        </li>
+
+        <li class="deco-link px-3 nav-item dropdown">
+          <a class="nav-link p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sliders"></i>
+          </a>
+          <div class="dropdown-menu pull-right p-0 border-0" aria-labelledby="navbarDropdown">
+            <div class="notify-arrow notify-arrow-green"></div>
+            <div class="dropdown-item wrap d-inline-block py-3 pt-4 px-1 w-100 bg-logo text-center">
+              <img src="assets/images/ui-gun.png" class="px-2 rounded-circle" style="height: 50px">
+              <div class="chat pt-3">
+                <p class=" m-0 pb-1 text-white">Gunaldi Yunus</p>
+              </div>
+            </div>
+            <div class="dropdown-item py-3">
+              <i class="fa fa-user-circle d-inline d-30"></i> <p class="d-inline px-3">Username</p>
+            </div>
+             <div class="dropdown-item py-3">
+              <i class="fa fa-camera-retro d-inline d-30"></i> <p class="d-inline px-3">Photos & Media</p>
+            </div>
+             <div class="dropdown-item py-3">
+              <i class="fa fa-file-image-o d-inline d-30"></i> <p class="d-inline px-3">Files</p>
+            </div>
+             <div class="dropdown-item py-3">
+              <i class="fa fa-question d-inline d-30"></i> <p class="d-inline px-3">Help</p>
+            </div>
+
+            <a href="" class="dropdown-item m-0 py-3"> Privacy & Terms</a>
+          </div>
+        </li>
+          
+        <li class="deco-link pl-3">
+          <a href="sign in.html"><i class="fa fa-power-off"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--/navigation-->
+<div class="col-12 main-bg"><h5 class="head-title py-2 m-0 px-3 pt-3" style="color: #989898 !important">DASHBOARD</h5></div>  
+<div class="main-bg px-2">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-12 px-3">
+      <div class="row">
+        <div class="col-sm-6 col-xl-3 px-2 py-2">
+          <div class="card border-0">
+            <div class="card-body" style="position: relative;">
+            <i class="fy modify fa fa-eye" aria-hidden="true"></i>
+            <div class="pull-right">
+              <h3 class="text-right">354</h3>
+              <p class="m-0">Today visits</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-xl-3 px-2 py-2">
+          <div class="card border-0">
+            <div class="card-body" style="position: relative;">
+            <i class="fy modify fa fa-usd" aria-hidden="true"></i>
+            <div class="pull-right">
+              <h3 class="text-right">31,374</h3>
+              <p class="m-0">Total revenue</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 px-2 py-2">
+          <div class="card border-0 ">
+            <div class="card-body" style="position: relative;">
+            <i class="fy modify fa fa-shopping-cart" aria-hidden="true"></i>
+            <div class="pull-right">
+              <h3 class="text-right">754</h3>
+              <p class="m-0">Today sale</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 px-2  py-2">
+          <div class="card border-0">
+            <div class="card-body" style="position: relative;">
+
+              <i class="fy modify fa fa-filter" aria-hidden="true"></i>
+            <div class="pull-right">
+              <h3 class="text-right">0,14%</h3>
+              <p class="m-0">Conversion</p>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-sm-12 col-md-6 px-2 mb-3" style="height: 380px;">
+          <div class="card text-center rounded-0 border-0 h-100">
+            <div class="card-header border-0 main-color">
+              <h4 class="text-white">Top Product</h4>
+            </div>
+            <div class="card-body">
+              <div class="frame"><img src="assets/images/blueberries-894839_640.png"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-md-12 mb-3 px-2">
+              <div class="card rounded-0 border-0">
+                <div class="card-body">
+                  <p class="m-0 pb-2">OVERALL SALES <br>Lorem ipsum dolor sit amet</p>
+                  <h2>$11.000</h2>
+                  <div class="progress mb-2" style="height: 8px">
+                    <div class="progress-bar bg-cool" style="width: 50%;height: 8px;"></div>
+                  </div>
+                  <p class="m-0">50% higher than last month</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 px-2">
+              <div class="card rounded-0 border-0">
+                <div class="card-body">
+                  <p class="m-0 pb-2">OVERALL SALES <br>Lorem ipsum dolor sit amet</p>
+                  <h2>$11.000</h2>
+                  <div class="progress mb-2" style="height: 8px">
+                    <div class="progress-bar bg-info" style="width: 50%;height: 8px;"></div>
+                  </div>
+                  <p class="m-0">50% higher than last month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+
+
+  <div class="row py-3">
+    <div class="col-12 pt-3 pb-5">
+    <!--CUSTOM CHART START -->
+      <div class="head-title mb-2 pb-2 px-3 ">
+        <h5>VISITS</h5>
+      </div>
+      <div class="custom-bar-chart">
+        <ul class="y-axis">
+          <li><span>1000</span></li>
+          <li><span>800</span></li>
+          <li><span>600</span></li>
+          <li><span>400</span></li>
+          <li><span>200</span></li>
+          <li><span>0</span></li>
+        </ul>
+      <div class="bar">
+      <div class="title">MON</div>
+        <div class="value main-color"  data-toggle="tooltip" data-placement="top" title="Tooltip on top" style="height: 85%"><p>850</p></div>
+      </div>
+      <div class="bar ">
+        <div class="title">TUE</div>
+        <div class="value main-color h-50"><p>500</p></div>
+      </div>
+      <div class="bar">
+        <div class="title">WED</div>
+        <div class="value main-color" style="height: 60%"><p>600</p></div>
+      </div>
+      <div class="bar ">
+        <div class="title">THU</div>
+        <div class="value main-color" style="height: 45%"><p>450</p></div>
+      </div>
+      <div class="bar">
+        <div class="title">FRI</div>
+        <div class="value main-color" style="height: 32%"><p>320</p></div>
+      </div>
+      <div class="bar ">
+        <div class="title">SAT</div>
+        <div class="value main-color" style="height: 62%"><p>620</p></div>
+      </div>
+      <div class="bar">
+        <div class="title">SUN</div>
+        <div class="value h-75 main-color"><p>750</p></div>
+      </div>
+    </div>
+    <!--custom chart end-->
+    </div>
+  </div>
+
+      <!--00-->
+        <div class="row px-4 py-3">
+          <div class="col-md-6 col-lg-4 px-2 py-2">
+            <div class="card border-0">
+            <div class="card-header text-center main-color">
+              <h4 class=" text-white">TASKS</h4>
+            </div>
+              <div class="wrap d-inline-block pt-3 w-100 px-2 py-3">
+                <p class="bold m-0 pull-left">Admin panel</p>
+                <p class="bold m-0 pull-right">40%</p><br>
+                <div class="progress" style="height: 10px">
+                  <div class="progress-bar bg-suc progress-bar-striped" style="width: 30%"></div>
+                </div>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100 px-2 py-3">
+                <p class="bold m-0 pull-left">Product development</p>
+                <p class="bold m-0 pull-right">55%</p><br>
+                <div class="progress" style="height: 10px">
+                  <div class="progress-bar bg-cool progress-bar-striped" style="width: 55%"></div>
+                </div>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100 px-2 py-3">
+                <p class="bold m-0 pull-left">Database update</p>
+                <p class="bold m-0 pull-right">30%</p><br>
+                <div class="progress" style="height: 10px">
+                  <div class="progress-bar bg-suc progress-bar-striped" style="width: 30%"></div>
+                </div>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100 px-2 py-3">
+                <p class="bold m-0 pull-left">Payment sent</p>
+                <p class="bold m-0 pull-right">80%</p><br>
+                <div class="progress" style="height: 10px">
+                  <div class="progress-bar bg-cool-2 progress-bar-striped" style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100 px-2 py-3">
+                <p class="bold m-0 pull-left">Server load</p>
+                <p class="bold m-0 pull-right">63%</p><br>
+                <div class="progress" style="height: 10px">
+                  <div class="progress-bar bg-focus progress-bar-striped" style="width: 63%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!---0000-->        
+          <div class="col-md-6 col-lg-4 px-2 py-2">
+            <div class="card border-0">
+            <div class="card-header text-center main-color">
+              <h4 class=" text-white">FEEDS</h4>
+            </div>
+              <div class="wrap d-inline-block pt-3 w-100">
+                <div class="icon-bg rounded-circle pull-left d-inline-block mx-3">
+                  <i class="icon-mod text-white fa fa-database" style="font-size: 15px !important"></i>
+                </div>
+                <p class="mod-font pull-left d-inline-block" style="width: 170px;"><span class="em">Just now</span><br><a href="">You</a> have 4 pending tasks
+                </p>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100">
+                <div class="icon-bg rounded-circle pull-left d-inline-block mx-3">
+                  <i class="icon-mod text-white fa fa-clock-o"></i>
+                </div>
+                <p class="mod-font pull-left d-inline-block" style="width: 170px;"><span class="em">2 hours ago</span><br><a href="">Server#1</a> overloaded
+                </p>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100">
+                <div class="icon-bg rounded-circle pull-left d-inline-block mx-3">
+                  <i class="icon-mod text-white fa fa-clock-o"></i>
+                </div>
+                <p class="mod-font pull-left d-inline-block" style="width: 170px;"><span class="em">Yesterday</span><br><a href="">New version</a> Just arrived</p>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100">
+                <div class="icon-bg rounded-circle pull-left d-inline-block mx-3">
+                  <i class="icon-mod text-white fa fa-clock-o"></i>
+                </div>
+                <p class="mod-font pull-left d-inline-block" style="width: 170px;"><span class="em">Yesterday</span><br><a href="">New version</a> Just arrived</p>
+              </div>
+
+              <div class="wrap d-inline-block pt-3 w-100">
+                <div class="icon-bg rounded-circle pull-left d-inline-block mx-3">
+                  <i class="icon-mod text-white fa fa-clock-o"></i>
+                </div>
+                <p class="mod-font pull-left d-inline-block" style="width: 170px;"><span class="em">Yesterday</span><br><a href="">New version</a> Just arrived</p>
+              </div>
+            </div>
+          </div>
+<!--pooop-->
+          <div class="col-md-12 col-lg-4 px-2 py-2">
+            <div class="card border-0">
+              <div id="my-calendar"></div>
+            </div>
+          </div>
+        </div>
+<!--huahahaha-->
+  <div class="row pb-5">
+        <div class="col-12 py-3">
+          <div class="head-title mb-2 pb-2 px-3">
+            <h5>LASTEST PROJECTS</h5>
+            <P>Awesome text goes here</P>
+          </div>
+          <table class="table-desktop table" id="tableu">
+            <div class="thead">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project name</th>
+                <th scope="col">Starts date</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Status </th>
+                <th scope="col">Assign</th>
+              </tr>
+            </div>
+            <div class="tbody">
+              <tr>
+                <th scope="row">1</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td>-/-</td>
+                <td><span class="badge badge-info">Released</span></td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td>-/-</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td>-/-</td>
+                <td><span class="badge badge-info">Released</span></td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td>-/-</td>
+                <td><span class="badge badge-danger">Canceled</span></td>
+                <td>Admin</td>
+              </tr>
+            </div>
+          </table> 
+
+          <table class="table-small table w-100">
+            <div class="thead">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project name</th>
+                <th scope="col">Starts date</th>
+                <th scope="col">Status </th>
+              </tr>
+            </div>
+            <div class="tbody">
+              <tr>
+                <th scope="row">1</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td><span class="badge badge-info">Released</span></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td><span class="badge badge-warning">Pending</span></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td><span class="badge badge-info">Released</span></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Green Garden</td>
+                <td>21/12/2017</td>
+                <td><span class="badge badge-danger">Canceled</span></td>
+              </tr>
+            </div>
+          </table> 
+
+        </div>
+      </div>
+    </div>
+  </div><!--row-->
+</div><!--fluid-->
+</div><!--d0nt left main-bg-->
+<footer class="py-3 main-color">
+  
+</footer>
+<!--modal-->
+<div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control rounded-0 w-75" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 rounded-0 w-25 border-left" type="submit">Go</button>
+        </form>
+      </div>
+      <div class="modal-footer border-0">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="assets/zabuto_calendar.js"></script>
+    <script src="assets/script.js"></script>
+    <script type="text/javascript">  
+    function showleft() {
+    $("#leftside").addClass("showleft").removeClass("hideleft");
+    $("#showleft").addClass("none").removeClass("block");
+    $("#hide").addClass("block").removeClass("none");
+    $("#content").addClass("padding_devault").removeClass("padding_option").removeClass("content");
+    }
+
+
+    function hideleft() {
+    $("#leftside").removeClass("showleft").addClass("hideleft");
+    $("#showleft").removeClass("none").addClass("block");
+    $("#hide").removeClass("block").addClass("none");
+    $("#content").removeClass("padding_devault").addClass("padding_option").addClass("content");
+    }
+
+</script>
+</body>
+</html>
